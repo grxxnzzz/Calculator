@@ -1,0 +1,135 @@
+* {
+    font-family: Tahoma, sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+button {
+    cursor: pointer;
+}
+
+.output-memory {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 30%;
+}
+
+.output-memory-list {
+    width: 100%;
+    padding: .25rem 0;
+    margin: 0;
+}
+
+.output-memory-text {
+    list-style: none;
+    text-align: end;
+    font-size: small;
+    padding: .1rem .5rem;
+    transition: ease-in-out 0.5s;
+}
+
+.previous {
+    opacity: 25%;
+    transition: ease-in-out 0.5s;
+    font-size: smaller;
+    /* color: red; */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    background-color: #f5f5f5;
+
+    width: 25vw;
+    height: 50vh;
+    border: 1px solid rgb(225, 225, 225);
+    border-radius: .5rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    margin: auto;
+}  
+
+/* Планшеты (ширина от 768px до 1024px) */
+@media (max-width: 1024px) {
+    .container {
+        width: 35vw;
+    }
+}
+
+/* Телефоны (ширина до 767px) */
+@media (max-width: 767px) {
+    .container {
+        width: 80vw;
+    }
+}
+
+.calculator-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    height: 100%;
+    gap: .5rem;
+}
+
+.input-field {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+    padding: .25rem 0;
+}
+
+.input-field input{
+    width: 95%;
+    margin: 0;
+    border: none;
+    border-radius: .2rem;
+    padding: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.button-layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .25rem;
+    align-items: stretch;
+    height: 100%;
+}
+
+.calc-button {
+    flex: 1 1 calc(25% - .25rem);
+    max-width: calc(25% - .25rem);
+    
+    border-radius: 2rem;
+    border:none;
+    
+    transition: 0.2s;
+}
+
+.operator {
+    background-color: orange;
+    transition: 0.1s;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.operator:hover {
+    background-color: rgb(255, 136, 0);
+    transition: 0.1s;
+}
+
+button:active {
+    transform: scale(85%);
+    transition: 0.1s;
+}
