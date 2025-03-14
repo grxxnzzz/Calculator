@@ -1,6 +1,8 @@
 # Basic Calculator
 🧮 This calculator involves me practicing into JS + HTML. 
 
+Application provides minimalistic design with calculations memory feature.
+
 ---
 
 ### The app features:
@@ -19,3 +21,9 @@
 
 ### ✅ Done:
 - Fixed scenarios when user entered something like `6+` and pressed `=` and it got written into the expressions memory list
+
+# Screenshots
+
+![screen1](./img/screen1.png)
+![screen2](./img/screen2.png)
+![screen3](./img/screen3.png)
